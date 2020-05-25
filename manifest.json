@@ -1,0 +1,19 @@
+{
+    "short_name": "PWA_IG",
+    "name": "Ma première PWA",
+    "icons": [{
+            "src": "/assets/images/icon.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "assets/images/icon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#000000",
+    "display": "standalone",
+    "theme_color": "#22a6b3"
+}
