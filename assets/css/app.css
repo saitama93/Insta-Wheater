@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  font-family: "Chivo-Black";
+  font-family: "Chivo-Black Arial";
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -105,5 +105,26 @@ body {
 
 #app .second-infos div {
   width: 100%;
+}
+
+.alert-card {
+  min-height: 120vh;
+  min-width: 100vw;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.alert-card .content {
+  background-color: #f0932b;
+  border-radius: 50px;
+  padding: 5%;
+}
+
+.alert-card .content .alert-title {
+  font-family: "Chivo-Black Arial";
+  font-size: 30px;
 }
 /*# sourceMappingURL=app.css.map */

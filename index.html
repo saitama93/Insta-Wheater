@@ -23,6 +23,14 @@
 
 <body>
 
+    <div class="alert-card d-flex justify-content-center align-items-center">
+        <div class="content d-flex flex-column justify-content between align-items-center">
+            <span class="alert-title text-center mb-5">Cette application à besoin de votre localisation</span>
+            <div class="response d-flex justify-content-around align-items-center" style="width: 100%!important">
+                <span class="alert-ok btn btn-success">Ok</span>
+                <span class="alert-refuse btn btn-danger">Refuser</span></div>
+        </div>
+    </div>
     <section id="app" class="container-fluid">
         <div class="col-12 text-center">
             <h1 class="h1 my-5">Insta Weather</h1>
@@ -33,9 +41,6 @@
                 <input type="text" class="text-left pl-5 offset-1 col-10 input-city mt-3 mb-5" placeholder="Saisir une ville">
                 <i class="fas fa-search-location"></i>
             </div>
-            <!-- <div class="d-flex justify-content-center">
-                <button type="submit" class="submit my-3">Go</button>
-            </div> -->
 
             <div class="main-infos d-flex justify-content-between align-items-center">
 
@@ -64,7 +69,7 @@
                 </div>
                 <div class="wind d-flex justify-content-between">
                     <p>Vent</p>
-                    <span class="wind-speed">30Km/h</span>
+                    <span class="wind-speed"></span>
                 </div>
             </div>
         </div>
