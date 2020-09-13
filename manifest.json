@@ -1,6 +1,6 @@
 {
-    "short_name": "PWA_IG",
-    "name": "Ma première PWA",
+    "short_name": "IWA",
+    "name": "INSTA WEATHER",
     "icons": [{
             "src": "/assets/images/icon.png",
             "type": "image/png",
