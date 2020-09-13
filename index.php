@@ -1,3 +1,27 @@
+<?php
+if (
+    stristr($_SERVER['HTTP_USER_AGENT'], "Android")
+    || strpos($_SERVER['HTTP_USER_AGENT'], "iPod")
+    || strpos($_SERVER['HTTP_USER_AGENT'], "iPhone")
+) {
+    // Mettre ici du code php optimisé pour les mobiles
+?>
+    <script>
+        console.log('Mobile');
+    </script>
+<?php
+} else {
+    // Et ici du code php classique...Pas forcement optimisé
+?>
+    <script>
+        console.log('PC');
+    </script>
+<?php
+}
+
+
+//(source : http://www.charlesen.fr/mon-blog/35-tutoriel/75-un-script-de-detection-de-mobiles-en-php)
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -24,7 +48,7 @@
 <body>
     <section id="app" class="container-fluid">
         <div class="col-12 text-center">
-            <h1 class="h1 my-5">Insta Weather</h1>
+            <h1 class="h1 my-5">Insta Alert</h1>
         </div>
 
         <div class="card col-12 offset-lg-4 col-lg-4 d-flex flex-column justify-content-around align-items-between my-5">
@@ -41,7 +65,7 @@
                     <span class="conditions text-right"></span>
                     <span class="temp-celcius temperature text-right"></span>
                     <p class="min-max text-right">
-                        <small>Min</small> <span class="min temperature"></span>/ <small>Max</small> <span class="max temperature"></span>
+                        <span class="min temperature"></span>/<span class="max temperature"></span>
                     </p>
                     <p class="location"><span class="city"></span>, <span class="country"></span></p>
                 </div>
@@ -73,6 +97,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="sw.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/alert.js"></script>
 </body>
 
 </html>
